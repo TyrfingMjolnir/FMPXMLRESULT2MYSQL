@@ -37,7 +37,7 @@
 			</xsl:attribute>
 			<xsl:for-each select="/fmp:FMPXMLRESULT/fmp:METADATA/fmp:FIELD">
 				<xsl:variable name="pt" select="position()" />
-					<xsl:attribute name="{translate( translate( translate(@NAME,' ', '') ,'.', '') ,':', '')}">
+				<xsl:attribute name="{translate( translate( translate(@NAME,' ', '') ,'.', '') ,':', '')}">
 					<xsl:value-of select="$subset/fmp:COL[$pt]/fmp:DATA"/>
 				</xsl:attribute>
 			</xsl:for-each>
