@@ -5,7 +5,7 @@
 	exclude-result-prefixes="xsl fmp">
 	<xsl:output method="xml" version="1.0" encoding="utf-8" indent="yes"/>
 	<xsl:template match="/fmp:FMPXMLRESULT">
-			<RECORDSET>
+			<RECORDSET> 
 				<xsl:attribute name="error">
 					<xsl:value-of select="fmp:ERRORCODE"/>
 				</xsl:attribute>
