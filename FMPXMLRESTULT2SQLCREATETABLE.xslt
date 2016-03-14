@@ -13,7 +13,7 @@
 			<xsl:value-of select="concat(
   substring( 'text', 1 div boolean( @TYPE  = 'TEXT' ) ),
   substring( 'date', 1 div boolean( @TYPE  = 'DATE' ) ),
-  substring( 'timestamp', 1 div boolean( @TYPE  = 'TIMESTAMP' ) ),
+  substring( 'timestamp with time zone', 1 div boolean( @TYPE  = 'TIMESTAMP' ) ),
   substring( 'numeric', 1 div boolean( @TYPE  = 'NUMBER' ) ) )"/>
 			<xsl:text>,
 </xsl:text>
