@@ -8,7 +8,7 @@ This is an XSLT stylesheet that can be used to export data from Filemaker to MyS
 Example use case
 ---
 mysql --user=<<USERNAME>> --password=<<PASSWORD>> --host=<<URI>> --local-infile
-LOAD XML LOCAL INFILE "/tmp/table.mysql.xml" INTO TABLE database.table CHARACTER SET "UTF8" ROWS IDENTIFIED BY "<RECORD>";
+LOAD XML LOCAL INFILE "/tmp/table.mysql.xml" INTO TABLE database.table CHARACTER SET \"UTF8\" ROWS IDENTIFIED BY \"\<RECORD\>\"\;
 ---
 
 
