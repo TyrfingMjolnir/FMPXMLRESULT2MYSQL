@@ -19,3 +19,5 @@ FMPXMLResult 2 SQL CREATE TABLE
 The file: FMPXMLRESTULT2SQLCREATETABLE.xslt
 
 This is an XSLT stylesheet that can be used to export table definition from Filemaker to SQL( psql for this one, but can easily be changed to the benefit of MySQL or other SQL dialects )
+
+Tip: For the purpose of running this script I do recommend you export 1 record, not having to wait unnecessary for records that are not being used. 
