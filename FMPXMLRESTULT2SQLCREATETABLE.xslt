@@ -10,15 +10,11 @@
 		<xsl:for-each select="fmp:METADATA/fmp:FIELD">
 			<xsl:value-of select="@NAME"/>
 		<xsl:text> </xsl:text>
-			<xsl:value-of select="concat(
-  substring( 'text', 1 div boolean( @TYPE  = 'TEXT' ) ),
-  substring( 'date', 1 div boolean( @TYPE  = 'DATE' ) ),
-  substring( 'timestamp with time zone', 1 div boolean( @TYPE  = 'TIMESTAMP' ) ),
-  substring( 'numeric', 1 div boolean( @TYPE  = 'NUMBER' ) ) )"/>
+			<xsl:value-of select="concat( substring( 'text', 1 div boolean( @TYPE  = 'TEXT' ) ), substring( 'date', 1 div boolean( @TYPE  = 'DATE' ) ), substring( 'timestamp with time zone', 1 div boolean( @TYPE  = 'TIMESTAMP' ) ), substring( 'numeric', 1 div boolean( @TYPE  = 'NUMBER' ) ) )"/>
 			<xsl:text>,
 </xsl:text>
 		</xsl:for-each>
-		<xsl:text>)</xsl:text>
+		<xsl:text>);</xsl:text>
 	</xsl:template>
 	<xsl:variable name="databaseName">
 		<xsl:value-of select="fmp:FMPXMLRESULT/fmp:DATABASE/@NAME"/>
