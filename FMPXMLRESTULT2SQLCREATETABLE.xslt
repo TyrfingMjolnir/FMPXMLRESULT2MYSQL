@@ -20,7 +20,7 @@
 				</xsl:otherwise>
 			</xsl:choose>
 		</xsl:for-each>
-		<xsl:text>)</xsl:text>
+		<xsl:text>);</xsl:text>
 	</xsl:template>
 	<xsl:variable name="databaseName">
 		<xsl:value-of select="fmp:FMPXMLRESULT/fmp:DATABASE/@NAME"/>
