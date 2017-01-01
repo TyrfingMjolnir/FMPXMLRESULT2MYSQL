@@ -43,4 +43,10 @@
 			</xsl:for-each>
 		</RECORD>
 	</xsl:template>
-</xsl:stylesheet>
+</xsl:stylesheet><!--
+========================================================================================
+Copyright (c) 2008 Gjermund Gusland Thorsen, released under the MIT License.
+All rights deserved.
+This piece comes with ABSOLUTELY NO WARRANTY, to the extent permitted by applicable law.
+========================================================================================
+-->
