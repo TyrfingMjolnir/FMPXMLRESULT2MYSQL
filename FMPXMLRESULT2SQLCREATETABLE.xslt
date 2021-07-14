@@ -9,7 +9,7 @@
 		<xsl:value-of select="$tableName"/>
 		<xsl:text>" (</xsl:text>
 		<xsl:for-each select="fmp:METADATA/fmp:FIELD">
-			<xsl:value-of select="@NAME"/>
+			<xsl:value-of select="translate( translate( translate(@NAME,' ', '') ,'.', '') ,':', '')"/>
 		<xsl:text> </xsl:text>
 			<xsl:value-of select="concat( substring( 'text', 1 div boolean( @TYPE  = 'TEXT' ) ), substring( 'blob', 1 div boolean( @TYPE  = 'CONTAINER' ) ), substring( 'date', 1 div boolean( @TYPE  = 'DATE' ) ), substring( 'timestamp', 1 div boolean( @TYPE  = 'TIMESTAMP' ) ), substring( 'numeric', 1 div boolean( @TYPE  = 'NUMBER' ) ) )"/>
 			<xsl:choose>
